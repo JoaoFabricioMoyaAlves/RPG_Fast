@@ -147,4 +147,11 @@ body{
         
     }
 
- 
+  .setatitle{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 2%;
+    left: 40px;
+    display: none;
+  }
