@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.tela{
+    box-shadow: 0px 5px 5px  5px rgb(255, 255, 255);
+        background-color: black;
+        background-position: center center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1100px; /* Largura da div */
+        height: 550px; /* Altura da div */
+        border: 5px solid black; /* Borda */
+        text-align: center; /* Centralizar texto */
+    }
+
+.fundo{
+     
+    background: url("sprites/bgtitle.gif");
+    width: 1100px; /* Largura da div */
+    height: 550px;
+    }
+
+    h1{
+       
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 100px;
+        position: absolute;
+        top: 5%;
+        left: 325px;
+    }
+
+    h2{
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        top: 25%;
+        left: 406px;
+    }
+
+
+
+    .hero1{
+        background-image: url('sprites/archer.png');
+        background-size: cover;
+        box-shadow: 0px 3px 3px  2px rgb(0, 0, 0);
+        border-radius: 20%;
+        position: absolute;
+        top: 40%;
+        left: 87.5px;
+        width: 250px;
+        height: 300px;
+        transition: 1s;
+        
+    }
+
+    .hero1:hover{
+        background-image: url('sprites/hero1select.gif');
+        top: 32%;
+        box-shadow: 0px 4px 4px  5px rgb(195, 0, 255);
+        
+    }
+
+   .hero1Click{
+    box-shadow: 0px 10px 10px  9px rgb(195, 0, 255);
+    border-radius: 20%;
+    position: absolute;
+    top: 10%;
+    left: 350px;
+    width: 400px;
+    height: 450px;
+    transition: 1s;
+   }
+
+   .hero2Click{
+    box-shadow: 0px 10px 10px  9px rgb(255, 0, 0);
+    border-radius: 20%;
+    position: absolute;
+    top: 10%;
+    left: 350px;
+    width: 400px;
+    height: 450px;
+    transition: 1s;
+   }
+
+   .hero3Click{
+    box-shadow: 0px 10px 10px  9px rgb(9, 241, 1);
+    border-radius: 20%;
+    position: absolute;
+    top: 10%;
+    left: 350px;
+    width: 400px;
+    height: 450px;
+    transition: 1s;
+   }
+
+
+
+
+    .hero2:hover{
+        background-image: url('sprites/hero2select.gif');
+        top: 32%;
+        box-shadow: 0px 4px 4px  5px rgb(255, 0, 0);
+        
+    }
+
+    .hero3:hover{
+        background-image: url('sprites/hero3select.gif');
+        top: 32%;
+        box-shadow: 0px 4px 4px  5px rgb(9, 241, 1);
+        
+    }
+
+    .hero2{
+        background-image: url('sprites/warrior.png');
+        background-size: cover;
+        box-shadow: 0px 4px 4px  3px rgb(0, 0, 0);
+        border-radius: 20%;
+        position: absolute;
+        top: 40%;
+        left: 425px;
+        width: 250px;
+        height: 300px;
+        transition: 1s;
+    }
+
+    .hero3{
+        background-image: url('sprites/mage.png');
+        background-size: cover;
+        box-shadow: 0px 3px 3px  3px rgb(0, 0, 0);
+        border-radius: 20%;
+        position: absolute;
+        top: 40%;
+        left: 762.5px;
+        width: 250px;
+        height: 300px;
+        transition: 1s;
+        
+    }
+
+ 
