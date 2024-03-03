@@ -155,3 +155,48 @@ body{
     left: 40px;
     display: none;
   }
+
+  .infohero1{
+    line-height: 24px;
+    font-family: "Julius Sans One", sans-serif;
+    position: absolute;
+    top: 23%;
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+
+  }
+
+  .infohero2{
+    line-height: 24px;
+    font-family: "Julius Sans One", sans-serif;
+    position: absolute;
+    top: 23%;
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+
+  }
+
+  .infohero3{
+    line-height: 24px;
+    font-family: "Julius Sans One", sans-serif;
+    position: absolute;
+    top: 23%;
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+
+  }
