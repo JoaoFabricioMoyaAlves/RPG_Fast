@@ -7,8 +7,13 @@ const infohero2 = document.getElementById('infohero2');
 const infohero3 = document.getElementById('infohero3');
 const setatitle = document.getElementById('setatitle');
 const btnIniciar = document.getElementById('btnIniciar');
+const currentHero = document.getElementById('currentHeroi');
+const titulo = document.getElementById('titulo');
+const SelectYourHero = document.getElementById('selectYourHero');
 
 var heroselect = 0;
+
+var heroi = 0;
 
 
 function selecttthero1(){
@@ -58,6 +63,10 @@ function hero1span(){
 
      heroselect = 1;
 
+     currentHero.value = 1;
+
+    
+
 }
 
 function hero2span(){
@@ -81,6 +90,8 @@ function hero2span(){
 
     heroselect = 2;
 
+    currentHero.value = 2;
+
 }
 
 function hero3span(){
@@ -102,6 +113,8 @@ function hero3span(){
     hero3.removeEventListener("mouseleave", backhero3);
 
     heroselect = 3;
+
+    currentHero.value = 3;
 
 }
 
@@ -129,6 +142,8 @@ function setatitlese(){
      
           heroselect = 0;
 
+          currentHero.value = 0;
+
   
 
      }else if (heroselect === 2){
@@ -154,6 +169,8 @@ function setatitlese(){
     
         heroselect = 0;
 
+        currentHero.value = 0;
+
 
      }else if (heroselect === 3){
 
@@ -178,6 +195,8 @@ function setatitlese(){
      
          heroselect = 0;
 
+         currentHero.value = 0;
+
      }else{
         alert("erro ao voltar para tela inicial");
 
@@ -185,3 +204,4 @@ function setatitlese(){
 
     
 } 
+

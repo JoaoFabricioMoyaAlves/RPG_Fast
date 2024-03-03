@@ -13,8 +13,8 @@
       <div class="fundo" id="fundo"></div>
        
       <button onclick="setatitlese()" id="setatitle" class="setatitle"><img src="sprites/setaDireitaTitle.png"></button>
-      <h1>Rpg_Fast</h1>
-      <h2>Select your Hero:</h2>
+      <h1 id="titulo">Rpg_Fast</h1>
+      <h2 id="selectYourHero">Select your Hero:</h2>
 
       
       <h3 class="infohero1" id="infohero1">Ariana Estelar é uma princesa arqueira nascida no Reino de Celestia, conhecido por suas vastas florestas e céus estrelados. Filha do Rei Alaric e da Rainha Elara, Ariana cresceu em meio à natureza exuberante do reino, desenvolvendo habilidades excepcionais com o arco e flecha desde tenra idade.</h3>
@@ -23,14 +23,18 @@
 
       <h3 class="infohero3" id="infohero3">Vorenthar é um mago poderoso, cuja especialidade reside no domínio das chamas verdes, uma forma de magia antiga e temível que consome e destrói tudo em seu caminho. Com olhos penetrantes que brilham com a intensidade das chamas e vestes adornadas com símbolos arcanos, ele é uma figura impressionante e imponente.</h3>
 
-      <button class="btnIniciar" id="btnIniciar">Iniciar</button>
-
+      <button class="btnIniciar" id="btnIniciar" onclick="Iniciar()">Iniciar</button>
+      
 
       <div id="hero1" class="hero1" onclick="hero1span()"></div>
 
       <div  id="hero2" class="hero2" onclick="hero2span()"></div>
 
       <div  id="hero3" class="hero3" onclick="hero3span()"></div>
+
+ <input type="hidden" name="heroi" value="0" id="currentHeroi">   
+ 
+ 
 
 
 
@@ -39,5 +43,7 @@
 
 
     <script src="script.js"></script>
+  
+    <script src="Escolhas.js" ></script>
 </body>
 </html>
