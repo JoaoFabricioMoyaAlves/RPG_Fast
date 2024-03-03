@@ -6,6 +6,7 @@ const infohero1 = document.getElementById('infohero1');
 const infohero2 = document.getElementById('infohero2');
 const infohero3 = document.getElementById('infohero3');
 const setatitle = document.getElementById('setatitle');
+const btnIniciar = document.getElementById('btnIniciar');
 
 var heroselect = 0;
 
@@ -51,6 +52,8 @@ function hero1span(){
 
     infohero1.style.display = 'block';
 
+    btnIniciar.style.display = 'block';
+
     hero1.removeEventListener("mouseleave", backhero1);
 
      heroselect = 1;
@@ -70,6 +73,8 @@ function hero2span(){
     setatitle.style.display = 'block';
 
     infohero2.style.display = 'block';
+
+    btnIniciar.style.display = 'block';
 
 
     hero2.removeEventListener("mouseleave", backhero2);
@@ -91,6 +96,8 @@ function hero3span(){
     setatitle.style.display = 'block';
 
     infohero3.style.display = 'block';
+
+    btnIniciar.style.display = 'block';
 
     hero3.removeEventListener("mouseleave", backhero3);
 
@@ -115,6 +122,8 @@ function setatitlese(){
 
          infohero1.style.display = 'none';
 
+         btnIniciar.style.display = 'none';
+
          hero1.addEventListener("mouseenter", selecttthero1);
          hero1.addEventListener("mouseleave", backhero1);
      
@@ -136,6 +145,8 @@ function setatitlese(){
         setatitle.style.display = 'none';
 
         infohero2.style.display = 'none';
+
+        btnIniciar.style.display = 'none';
 
         
         hero2.addEventListener("mouseenter", selecttthero2);
@@ -159,6 +170,8 @@ function setatitlese(){
          setatitle.style.display = 'none';
 
          infohero3.style.display = 'none';
+
+         btnIniciar.style.display = 'none';
 
          hero3.addEventListener("mouseenter", selecttthero3);
          hero3.addEventListener("mouseleave", backhero3);
