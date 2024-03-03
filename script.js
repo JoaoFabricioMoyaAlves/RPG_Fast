@@ -5,6 +5,35 @@ const hero2 = document.getElementById('hero2');
 const setatitle = document.getElementById('setatitle');
 
 var heroselect = 0;
+
+
+function selecttthero1(){
+    hero1.style.backgroundImage = 'url("sprites/hero1select.gif")';
+}
+function backhero1(){
+    hero1.style.backgroundImage = 'url("sprites/archer.png")';
+}
+
+
+
+function selecttthero2(){
+    hero2.style.backgroundImage = 'url("sprites/hero2select.gif")';
+}
+function backhero2(){
+    hero2.style.backgroundImage = 'url("sprites/warrior.png")';
+}
+
+function selecttthero3(){
+    hero3.style.backgroundImage = 'url("sprites/hero3select.gif")';
+}
+function backhero3(){
+    hero3.style.backgroundImage = 'url("sprites/mage.png")';
+}
+
+
+
+
+
 function hero1span(){
    fundo.style.transition='opacity 1s';
    fundo.style.opacity='0';
@@ -16,6 +45,8 @@ function hero1span(){
     hero1.classList.add('hero1Click');
 
     setatitle.style.display = 'block';
+
+    hero1.removeEventListener("mouseleave", backhero1);
 
      heroselect = 1;
 
@@ -33,6 +64,8 @@ function hero2span(){
 
     setatitle.style.display = 'block';
 
+    hero2.removeEventListener("mouseleave", backhero2);
+
     heroselect = 2;
 
 }
@@ -48,6 +81,8 @@ function hero3span(){
     hero3.classList.add('hero3Click');
 
     setatitle.style.display = 'block';
+
+    hero3.removeEventListener("mouseleave", backhero3);
 
     heroselect = 3;
 
@@ -68,12 +103,8 @@ function setatitlese(){
      
          setatitle.style.display = 'none';
 
-         hero1.addEventListener("mouseenter", function(){
-            hero1.style.backgroundImage = 'url("sprites/hero1select.gif")';
-         });
-         hero1.addEventListener("mouseleave", function(){
-            hero1.style.backgroundImage = 'url("sprites/archer.png")';
-         });
+         hero1.addEventListener("mouseenter", selecttthero1);
+         hero1.addEventListener("mouseleave", backhero1);
      
           heroselect = 0;
 
@@ -93,12 +124,8 @@ function setatitlese(){
         setatitle.style.display = 'none';
 
         
-        hero2.addEventListener("mouseenter", function(){
-            hero2.style.backgroundImage = 'url("sprites/hero2select.gif")';
-         });
-         hero2.addEventListener("mouseleave", function(){
-            hero2.style.backgroundImage = 'url("sprites/warrior.png")';
-         });
+        hero2.addEventListener("mouseenter", selecttthero2);
+         hero2.addEventListener("mouseleave", backhero2);
     
         heroselect = 0;
 
@@ -117,12 +144,8 @@ function setatitlese(){
      
          setatitle.style.display = 'none';
 
-         hero3.addEventListener("mouseenter", function(){
-            hero3.style.backgroundImage = 'url("sprites/hero3select.gif")';
-         });
-         hero3.addEventListener("mouseleave", function(){
-            hero3.style.backgroundImage = 'url("sprites/mage.png")';
-         });
+         hero3.addEventListener("mouseenter", selecttthero3);
+         hero3.addEventListener("mouseleave", backhero3);
      
          heroselect = 0;
 
