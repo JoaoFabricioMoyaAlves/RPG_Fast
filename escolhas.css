@@ -1,0 +1,30 @@
+
+.escolha1{
+    background-color: black;
+    background-size: cover;
+    box-shadow: 0px 3px 3px  3px rgb(0, 0, 0);
+    border-radius: 20%;
+    position: absolute;
+    top: 15%;
+    left: 400px;
+    width: 200px;
+    height: 250px;
+    transition: 1s;
+    display: none;
+    
+}
+
+.escolha2{
+    background-color: rgb(22, 56, 167);
+    background-size: cover;
+    box-shadow: 0px 3px 3px  3px rgb(0, 0, 0);
+    border-radius: 20%;
+    position: absolute;
+    top: 15%;
+    left: 700px;
+    width: 200px;
+    height: 250px;
+    transition: 1s;
+    display: none;
+    
+}

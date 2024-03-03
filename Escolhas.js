@@ -1,5 +1,7 @@
 const heroiMain = document.getElementById('heroiMain')
 const currentHeroAt = document.getElementById('currentHeroi');
+const escolha1 = document.getElementById('escolha1');
+const escolha2 = document.getElementById('escolha2')
 
 function Iniciar(){
 
@@ -31,6 +33,10 @@ function Iniciar(){
      }else{
         alert(`erro ao selecionar campeão`);
      }
+
+   escolha1.style.display = 'block';
+   escolha2.style.display = 'block';
+
 
 
 
