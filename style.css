@@ -147,6 +147,21 @@ body{
         
     }
 
+    .heroiMain{
+        background-color: transparent;
+        background-size: cover;
+        
+        border-radius: 20%;
+        position: absolute;
+        top: 45%;
+        left: 20px;
+        width: 250px;
+        height: 300px;
+        transition: 1s;
+        display: none;
+        
+    }
+
   .setatitle{
     background-color: transparent;
     border: none;

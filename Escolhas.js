@@ -1,3 +1,4 @@
+const heroiMain = document.getElementById('heroiMain')
 const currentHeroAt = document.getElementById('currentHeroi');
 
 function Iniciar(){
@@ -16,11 +17,20 @@ function Iniciar(){
     fundo.style.opacity='1';
     fundo.style.backgroundImage = 'url("sprites/bgmasmora2.png")';
     const heroiAt = currentHeroAt.value ;
-    if(currentHeroAt.value == true){
-
+    if(currentHeroAt.value == 1 || 2 || 3){
 
     alert(`bora bora herois: ${currentHeroAt.value} aaa ${heroiAt} `);
 
+    heroiMain.style.display = 'block';
+     if(currentHeroAt.value == 1){
+        heroiMain.style.backgroundImage = 'url("sprites/archer.png")';
+     }else if(currentHeroAt.value == 2){
+        heroiMain.style.backgroundImage = 'url("sprites/warrior.png")';
+     }else if(currentHeroAt.value ==3){
+        heroiMain.style.backgroundImage = 'url("sprites/mage.png")';
+     }else{
+        alert(`erro ao selecionar campeão`);
+     }
 
 
 
@@ -52,7 +62,8 @@ function Iniciar(){
 
 
 
-    
+
+
 }else{
     alert("deu bosta");
     location.reload();
