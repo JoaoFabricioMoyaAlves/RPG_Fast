@@ -45,4 +45,4 @@ Esse projeto está pausado, mas **pode voltar no futuro** com novas funcionalida
 
 1. Clone ou baixe o projeto:
    ```bash
-   git clone https://github.com/seu-usuario/rpg-web-retro.git
+   git clone https://github.com/JoaoFabricioMoyaAlves/RPG_Fast.git
